@@ -4,8 +4,6 @@ Website company profile berbasis **Next.js** (static export) dengan **panel admi
 untuk mengelola seluruh konten: teks, gambar, info kontak, item layanan, hingga proyek portofolio.
 
 🌐 **Live:** https://wahyusuryadev.github.io/website-kita-punya-project/
-🔐 **Panel admin:** `/admin/` — kode akses bawaan `kpp2026` (ganti di `app/admin/page.jsx`, konstanta `PASS`)
-
 ## Struktur
 
 | Lokasi | Fungsi |
