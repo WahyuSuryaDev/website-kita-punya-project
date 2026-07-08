@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf docs && mv out docs && touch docs/.nojekyll",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "build:pages": "next build && rm -rf docs && mv out docs && touch docs/.nojekyll"
   },
   "dependencies": {
     "next": "^14.2.30",

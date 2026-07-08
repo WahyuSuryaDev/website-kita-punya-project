@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const basePath = '/website-kita-punya-project';
+// Vercel menyajikan dari root domain; GitHub Pages dari sub-path repo.
+const isVercel = !!process.env.VERCEL;
+const basePath = isVercel ? '' : '/website-kita-punya-project';
 
 const nextConfig = {
   output: 'export',
