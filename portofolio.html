@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio &mdash; Kita Punya Project</title>
+<meta name="description" content="Pilihan proyek kami — event, kampanye digital, branding & website, hingga penataan manajemen bisnis.">
+<meta property="og:title" content="Portofolio &mdash; Kita Punya Project">
+<meta property="og:description" content="Pilihan proyek kami — event, kampanye digital, branding & website, hingga penataan manajemen bisnis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23C1121F'/%3E%3Cpath d='M15 49C22 32 32 21 49 13C39 26 31 38 27 49Z' fill='white'/%3E%3Ccircle cx='47' cy='47' r='5.5' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container nav">
+    <a class="nav-logo" href="index.html" data-nav="beranda" aria-label="Kita Punya Project — Beranda">
+      <img src="assets/logo.png" data-c-img="logo" alt="Logo Kita Punya Project" width="720" height="179">
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="index.html" data-nav="beranda"><span data-c="umum.nav-beranda">Beranda</span></a>
+      <a href="tentang.html" data-nav="tentang"><span data-c="umum.nav-tentang">Tentang</span></a>
+      <a href="layanan.html" data-nav="layanan"><span data-c="umum.nav-layanan">Layanan</span></a>
+      <a href="portofolio.html" data-nav="portofolio" class="active"><span data-c="umum.nav-portofolio">Portofolio</span></a>
+      <a href="kontak.html" data-nav="kontak"><span data-c="umum.nav-kontak">Kontak</span></a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-red" href="kontak.html"><span data-c="umum.nav-tombol">Hubungi Kami</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi seluler">
+    <a href="index.html" data-nav="beranda"><span data-c="umum.nav-beranda">Beranda</span></a>
+    <a href="tentang.html" data-nav="tentang"><span data-c="umum.nav-tentang">Tentang</span></a>
+    <a href="layanan.html" data-nav="layanan"><span data-c="umum.nav-layanan">Layanan</span></a>
+    <a href="portofolio.html" data-nav="portofolio" class="active"><span data-c="umum.nav-portofolio">Portofolio</span></a>
+    <a href="kontak.html" data-nav="kontak"><span data-c="umum.nav-kontak">Kontak</span></a>
+  </nav>
+</header>
+
+<main>
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero" data-word="Karya." data-c-word="portofolio.kata-latar">
+  <div class="container">
+    <span class="eyebrow" data-c="portofolio.hero-label">Portofolio</span>
+    <h1 class="d"><span data-c="portofolio.hero-judul">Karya yang Kami Banggakan</span><b class="dot">.</b></h1>
+    <p data-c="portofolio.hero-lead">Pilihan proyek dari dua lini layanan kami — dari festival ribuan pengunjung hingga penataan sistem manajemen bisnis. Klik setiap kartu untuk melihat detailnya.</p>
+    <div class="ph-chips">
+      <span><i></i><span data-c="portofolio.chip-1">12 Proyek Terpilih</span></span>
+      <span><i></i><span data-c="portofolio.chip-2">4 Kategori Layanan</span></span>
+      <span><i></i><span data-c="portofolio.chip-3">2024&ndash;2026</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERI PROYEK =================
+     Kartu proyek dirender otomatis dari assets/content.js (bisa dikelola dari admin.html) -->
+<section class="section">
+  <div class="container">
+    <div class="filters reveal in" role="group" aria-label="Filter kategori proyek">
+      <button class="fbtn active" data-filter="all">Semua Proyek</button>
+      <button class="fbtn" data-filter="event">Event Activation</button>
+      <button class="fbtn" data-filter="marketing">Marketing &amp; Digital</button>
+      <button class="fbtn" data-filter="branding">Branding &amp; Website</button>
+      <button class="fbtn" data-filter="service">Service Management</button>
+    </div>
+    <p class="fcount">Menampilkan <b id="fcountNum">&hellip;</b> proyek</p>
+
+    <div class="works-grid" id="worksGrid"></div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div>
+        <h2 class="d"><span data-c="cta.judul">Punya Acara atau Kebutuhan Bisnis</span><span style="opacity:.55">?</span></h2>
+        <p data-c="cta.teks">Ceritakan kebutuhan Anda — tim kami siap membantu, dari konsep pertama hingga eksekusi di lapangan.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-white" data-wa href="https://wa.me/6281200000000" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22l5.9-2z"/></svg>
+          <span data-c="cta.tombol-wa">Chat via WhatsApp</span>
+        </a>
+        <a class="btn btn-outline-white" data-mail href="mailto:halo@kitapunyaproject.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span data-c="cta.tombol-email">Kirim Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= MODAL DETAIL PROYEK ================= -->
+<div class="modal" id="workModal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Tutup detail proyek">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover cv-red" id="mCover">
+      <span class="wc-tag" id="mTag"></span>
+      <h3 class="wc-title" id="mTitle"></h3>
+      <span class="wc-year" id="mYear"></span>
+    </div>
+    <div class="modal-body">
+      <div class="mmeta">
+        <div><h5>Klien</h5><p id="mClient"></p></div>
+        <div><h5>Tahun</h5><p id="mYearMeta"></p></div>
+        <div><h5>Lokasi</h5><p id="mLoc"></p></div>
+        <div><h5>Kategori</h5><p id="mCat"></p></div>
+      </div>
+      <p id="mDesc"></p>
+      <h6>Lingkup Kerja</h6>
+      <div class="mscope" id="mScope"></div>
+      <h6>Hasil</h6>
+      <ul class="mresults" id="mResults"></ul>
+      <a class="btn btn-red" href="kontak.html"><span data-c="portofolio.modal-tombol">Diskusikan Proyek Serupa</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark" aria-label="Kita Punya Project">
+          <span class="wm-top" data-c="umum.wordmark-atas">Kita Punya</span>
+          <span class="wm-bot"><span data-c="umum.wordmark-bawah">Project</span><b class="dot">.</b></span>
+        </div>
+        <p class="footer-tagline" data-c="footer.tagline">Perusahaan penyelenggara acara dan pengelolaan layanan bisnis — eksekusi kreatif yang didukung sistem manajemen internal yang solid.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigasi</h5>
+        <a href="index.html"><span data-c="umum.nav-beranda">Beranda</span></a>
+        <a href="tentang.html"><span data-c="umum.nav-tentang">Tentang</span></a>
+        <a href="layanan.html"><span data-c="umum.nav-layanan">Layanan</span></a>
+        <a href="portofolio.html"><span data-c="umum.nav-portofolio">Portofolio</span></a>
+        <a href="kontak.html"><span data-c="umum.nav-kontak">Kontak</span></a>
+      </div>
+      <div class="footer-col">
+        <h5>Layanan</h5>
+        <a href="layanan.html">Event Activation</a>
+        <a href="layanan.html">Marketing</a>
+        <a href="layanan.html">Human Resources</a>
+        <a href="layanan.html">Finance</a>
+        <a href="layanan.html">Legal</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><i></i>&copy; <span id="year">2026</span> <span data-c="footer.copyright">PT Kita Punya Project. Seluruh hak cipta.</span></p>
+      <p data-c="footer.moto">Event Activation &bull; Service Management</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/content.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
